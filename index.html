@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 
-<!-- Inicio Navbar-->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<nav class="navbar navbar-dark bg-dark">
+  <!-- Inicio Navbar-->
+
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand">Notas Personales</a>
       <form class="d-flex">
@@ -21,17 +23,46 @@
     </div>
   </nav>
 
-<!-- Inicio Navbar-->
+  <!-- Inicio Navbar-->
 
-    <title>Notas</title>
-  </head>
-  <body>
+  <title>Notas</title>
+</head>
+
+<body>
+
+  <Main>
+    <Header>
+      <h1>Mis notas personales</h1>
+    </Header>
+
+    <!--Formulario de alta de notas-->
+    <section>
+      <form class="card p-5" style="max-width: 500px;">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Categoría</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Descripción</label>
+        </div>
+      </form>
+    </section>
+
+    <!--Seccion tabla de notas-->
+    <section>
+
+    </section>
+  </Main>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 
-    <script src="./desafio.js" ></script>
-  </body>
+  <script src="./desafio.js"></script>
+</body>
+
 </html>

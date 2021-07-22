@@ -37,21 +37,49 @@
 
     <!--Formulario de alta de notas-->
     <section>
-      <form class="card p-5" style="max-width: 500px;">
+      <form onsubmit="AgregarNota(event)" class="card p-5" style="max-width: 500px;">
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <input type="text" class="form-control" id="categoria" placeholder="name@example.com">
           <label for="floatingInput">Categoría</label>
         </div>
         <div class="form-floating">
-          <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+          <input type="text" class="form-control" id="descripcion" placeholder="Password">
           <label for="floatingPassword">Descripción</label>
         </div>
+        <button class="btn btn-success">Agregar Nota</button>
       </form>
     </section>
 
     <!--Seccion tabla de notas-->
     <section>
+      <table class="table table-dark table-striped">
 
+          <thead>
+            <tr>
+              <th scope="col">Categoría</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Modificar</th>
+
+            </tr>
+          </thead>
+          <tbody  id="contenidoTabla">
+
+            <!--
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td><button class="btn btn-warning">Editar</button></td>
+
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td><button class="btn btn-warning">Editar</button></td>
+
+            -->
+            </tbody>
+
+      </table>
     </section>
   </Main>
 

@@ -1,6 +1,6 @@
 const categoriaInput = document.getElementById('categoria');
 const descripcionInput = document.getElementById('descripcion');
-const =contenidoTabla = document.getElementById ('contenidoTabla')
+const contenidoTabla = document.getElementById('contenidoTabla')
 const notas = [];
 
 function AgregarNota(event) {
@@ -21,20 +21,16 @@ function AgregarNota(event) {
 
 
 function mostrarNotas() {
-
-    const contenido = notas.map(function (nota){
-     
-    const tr = `
-    
+    const contenido = notas.map(function (nota) {
+        const tr = `
     <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
+    <th scope="row">${nota.categoria}</th>
+    <td>${nota.descripcion}</td>
     <td><button class="btn btn-warning">Editar</button></td>
-
     </tr>
-    
     `;
-    return tr
-});
+        return tr;
+    });
+    contenidoTabla.innerHTML = contenido.join('');
+}
 
-contenidoTabla

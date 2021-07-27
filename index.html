@@ -39,11 +39,11 @@
     <section>
       <form onsubmit="AgregarNota(event)" class="card p-5" style="max-width: 500px;">
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="categoria" placeholder="name@example.com">
+          <input maxlength="60" type="text" class="form-control" id="categoria" placeholder="name@example.com">
           <label for="floatingInput">Categoría</label>
         </div>
         <div class="form-floating">
-          <input type="text" class="form-control" id="descripcion" placeholder="Password">
+          <input maxlength="500" type="text" class="form-control" id="descripcion" placeholder="Password">
           <label for="floatingPassword">Descripción</label>
         </div>
         <button class="btn btn-success">Agregar Nota</button>
@@ -95,56 +95,54 @@
   </Main>
 
 
-   <!-- Modal detalle de nota -->
-   <div class="modal fade" id="modalDetalleNota" tabindex="-1" aria-labelledby="exampleModalLabel"
-   aria-hidden="true">
-   <div class="modal-dialog">
-       <div class="modal-content">
-           <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">Info de nota</h5>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
-           <div id="detalleNotaDiv" class="modal-body">
-               <!-- <p>Nombre: </p>
+  <!-- Modal detalle de nota -->
+  <div class="modal fade" id="modalDetalleNota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Info de nota</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="detalleNotaDiv" class="modal-body">
+          <!-- <p>Nombre: </p>
                <p>Correo: </p>
                <p>Rol: </p>
                <p>Fecha de registro: </p> -->
-           </div>
-           <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-           </div>
-       </div>
-   </div>
-</div>
-<!-- Modal editar nota -->
-<div class="modal fade" id="modalEditarNota" tabindex="-1" aria-labelledby="exampleModalLabel"
-   aria-hidden="true">
-   <div class="modal-dialog">
-       <form onsubmit="editarNota(event)" class="p-5" style="max-width: 500px;">
-           <div class="modal-content">
-               <div class="modal-header">
-                   <h5 class="modal-title" id="exampleModalLabel">Edición de nota</h5>
-                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body p-4">
-                   <!-- Formulario editar nota -->
-                   <div class="form-floating mb-3">
-                       <input type="text" class="form-control" id="categoriaEditado" placeholder="Una categoria">
-                       <label for="categoriaEditado">Categoría</label>
-                   </div>
-                   <div class="form-floating mb-3">
-                       <input type="text" class="form-control" id="descripcionEditado" placeholder="Descripcion de nota">
-                       <label for="descripcionEditado">Descripción</label>
-                   </div>
-               </div>
-               <div class="modal-footer">
-                   <button class="btn btn-primary">Editar nota</button>
-                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-               </div>
-           </div>
-       </form>
-   </div>
-</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal editar nota -->
+  <div class="modal fade" id="modalEditarNota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form onsubmit="editarNota(event)" class="p-5" style="max-width: 500px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edición de nota</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <!-- Formulario editar nota -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="categoriaEditado" placeholder="Una categoria">
+              <label for="categoriaEditado">Categoría</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="descripcionEditado" placeholder="Descripcion de nota">
+              <label for="descripcionEditado">Descripción</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Editar nota</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
 
 
